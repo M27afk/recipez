@@ -1,0 +1,57 @@
+#recipemain{
+    margin-top:70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start    ;
+    min-height: 80vh;
+}
+
+#search{
+    padding: 20px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center  ;
+}
+
+#search input{
+    width: 400px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+#search input:focus{
+    outline: none;
+}
+#searchicon{
+    background-color: white;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center  ;
+    border-radius:0 10px 10px 0;
+    cursor: pointer;
+}
+#search img{
+    height: 20px;
+    padding-right: 8px;
+}
+
+#cards-area{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    #search{
+        padding: 20px 2px;
+    }
+    #search input{
+        width: 315px;
+    }
+
+}

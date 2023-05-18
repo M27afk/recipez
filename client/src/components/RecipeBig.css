@@ -1,0 +1,77 @@
+#recipe--main{
+    margin-top: 70px;
+    width: 100%;
+   min-height: 80vh;
+    display: flex;
+}
+
+#recipe--left{
+    flex:7;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 20px 0 0 50px;
+}
+#recipe--head{
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+#recipe--right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:3;
+}
+.instr--steps{
+    font-size: 1.1em;
+    margin:15px 0;
+    letter-spacing: 1px;
+
+}
+.instr--num{
+    font-weight: 500;
+    margin: 5px 0;
+}
+#recipe--img{
+    margin-top: 15px;
+}
+#recipe--img img{
+    border-radius: 5px;
+}
+#recipe--ingr{
+    align-self: flex-start;
+    margin-left: 30px;
+}
+#recipe--ingr ul {
+    list-style: none;
+}
+#recipe--ingr ul li{
+    margin: 5px 0;
+}
+#recipe--ingr ul li::before {
+    content: "\2022";
+    color: #675D50;
+    font-weight: 600;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+#recipe--subhead{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 768px) {
+    #recipe--main{
+        flex-direction: column-reverse;
+    }
+
+    #recipe--left{
+        padding: 20px 10px 0 15px;
+    }
+    #recipe--ingr{
+        margin-left: 15px;
+    }
+}
