@@ -19,7 +19,7 @@ export default function Footer() {
         </a>
       </div>
       <div id="footDetails">
-        Recipez. Copyright &#169; 2023 - Designed with &#9829; by Manushreshta
+        Recipez. Copyright &#169; 2023 - Developed with &#9829; by Manushreshta
       </div>
     </div>
   );
