@@ -3,6 +3,7 @@ import SearchIcon from "../assets/searchicon.svg";
 import axios from "axios";
 import "./Recipemain.css";
 import Card from "./Card";
+import { staticData } from "../assets/staticData";
 
 export default function RecipeMain() {
   const [query, setQuery] = useState(
@@ -52,7 +53,17 @@ export default function RecipeMain() {
       </div>
       <div id="cards-area">
         {!loading ? (
-          <div>Loading</div>
+          staticData.map((item) => (
+            <Card
+              key={item.id}
+              id={item.id}
+              name={item.title}
+              usedIngredients={item.usedIngredients}
+              missedIngredients={item.missedIngredients}
+              ingredients={item.usedIngredients.slice(0, 3)}
+              image={item.image}
+            />
+          ))
         ) : response.length === 0 ? (
           <div>No matching Recipes found!</div>
         ) : (
